@@ -1,4 +1,4 @@
-# binance_market_data_downloader
+# Binance Market Data Downloader
 This Python script downloads Binance market data, letting users choose symbol, timeframe, and dates. Saves data in yearly CSVs, including prices and volume.
 
 **Binance Market Data Downloader**
