@@ -1,4 +1,4 @@
-# Binance Market Data Download Script
+# Binance Market Data Downloader
 
 ## Description
 This Python script facilitates downloading historical market data from the Binance exchange. It is designed for market analysis, trading strategy backtesting, academic research, and any application requiring historical cryptocurrency data.
