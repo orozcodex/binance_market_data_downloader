@@ -1,26 +1,35 @@
-# Binance Market Data Downloader
-This Python script downloads Binance market data, letting users choose symbol, timeframe, and dates. Saves data in yearly CSVs, including prices and volume.
+# Binance Market Data Download Script
 
-**Binance Market Data Downloader**
+## Description
+This Python script facilitates downloading historical market data from the Binance exchange. It is designed for market analysis, trading strategy backtesting, academic research, and any application requiring historical cryptocurrency data.
 
-This Python script allows users to download historical market data from the Binance exchange. It offers a simple command-line interface for specifying the cryptocurrency symbol, the data timeframe (e.g., 1 minute, 1 hour), and the desired date range for the data retrieval. The downloaded data includes open, high, low, close prices, volume, and other relevant market information, which are saved into yearly CSV files named according to the symbol, timeframe, and year of the data.
+## How to Use the Data
+Data is saved in CSV files, one for each year and specified cryptocurrency, following the format `SYMBOL_TIMEFRAME_market_data_YEAR.csv`, where:
+- `SYMBOL` denotes the cryptocurrency symbol (e.g., BTCUSDT).
+- `TIMEFRAME` specifies the data interval (e.g., 1m, 1h).
+- `YEAR` represents the year of the data included.
 
-**Features:**
-- User-friendly command-line interface for specifying parameters.
-- Supports various timeframes (e.g., 1m, 1h, 1d) for flexible data analysis needs.
-- Downloads data for a specified date range, allowing for targeted analysis.
-- Organizes downloaded data into yearly CSV files for easy management and access.
+### Dataset Structure
+Each CSV file contains columns for:
+- `Open Time`: Unix timestamp of the interval start.
+- `Open`: Opening price.
+- `High`: Highest price during the interval.
+- `Low`: Lowest price during the interval.
+- `Close`: Closing price.
+- `Volume`: Traded volume.
+- `Close Time`: Unix timestamp of the interval end.
+- Additional metrics: `Quote Asset Volume`, `Number of Trades`, `Taker Buy Base Asset Volume`, `Taker Buy Quote Asset Volume`, `Ignore`.
 
-**Usage:**
-1. Run the script from the command line.
-2. Enter the desired cryptocurrency symbol (e.g., BTCUSDT) when prompted.
-3. Specify the data timeframe (e.g., 1m for one minute).
-4. Enter the start and end dates for the data download in YYYY-MM-DD format.
-5. The script will retrieve the data and save it into CSV files, one for each year in the specified date range.
+## How to Contribute
+Feel free to open a pull request or issue to share Binance datasets or suggest improvements. Ensure to follow GitHub best practices and provide a clear description of your contributions.
 
-**Requirements:**
-- Python 3
-- Requests library
+## Responsible Data Use
+This repository is provided for educational and research purposes. Users are responsible for adhering to Binance API policies and using the data ethically and legally. Please see [Binance Terms of Use](https://www.binance.com/en/terms) for more information.
 
-**Note:**
-This script is designed for educational and analytical purposes. Users are responsible for adhering to Binance's API usage policies and guidelines.
+## License
+This project is licensed under the [MIT License](LICENSE). Please review the `LICENSE` file for details.
+
+## Contact
+For questions or comments about this repository, please feel free to contact the repository owner via [GitHub Issues](https://github.com/orozcodex/binance_market_data_downloader/issues).
+
+---
