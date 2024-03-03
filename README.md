@@ -6,7 +6,7 @@ This Python script facilitates downloading historical market data from the Binan
 
 ## Features
 
-- '**Flexible Data Retrieval**': Supports downloading data for any cryptocurrency pair available on Binance.
+- `**Flexible Data Retrieval**`: Supports downloading data for any cryptocurrency pair available on Binance.
 - **Customizable Timeframes**: Allows specification of data interval, ranging from 1 minute to 1 month.
 - **Automated File Organization**: Saves data in CSV format, organized by year and cryptocurrency pair.
 - **Comprehensive Dataset**: Each record includes detailed trading metrics such as open, high, low, close prices, and volume.
